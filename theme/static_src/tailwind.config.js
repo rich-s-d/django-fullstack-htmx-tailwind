@@ -39,10 +39,25 @@ module.exports = {
          * Python: If you use Tailwind CSS classes in Python, uncomment the following line
          * and make sure the pattern below matches your project structure.
          */
-        // '../../**/*.py'
+        '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        fontFamily: {
+            sans: ["Roboto"] // setting the default font-family
+        },
+        extend: {
+            fontFamily: {
+                "roboto": ["Roboto", "sans-serif"], // making possible to use classes font-roboto and font-dancing-script
+                "dancing-script": ["Dancing Script", "cursive"],
+            },
+            colors: {
+                "custom-powder-light": "#eee2dc",
+                "custom-powder": "#edc7b7",
+                "custom-blue": "#123c69",
+                "custom-blue-light": "#3a6aa4",
+                "custom-red": "#ac3b61",
+            },
+        },
     },
     plugins: [
         /**
