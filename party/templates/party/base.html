@@ -1,12 +1,15 @@
 <!--party/templates/party/base.html-->
 
 {% load static %}
+{% load static tailwind_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Party!</title>
     <script type="text/javascript" src="{% static '/party/js/htmx.min.js' %}"></script>
+    {% tailwind_css %}
 </head>
 <body>
 <main>
